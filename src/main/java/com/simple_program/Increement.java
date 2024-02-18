@@ -46,11 +46,19 @@ while(itr.hasNext()) {
 	System.out.println(key);
 	System.out.println(map.get(key));
 }
+
+System.out.println();
+
+System.out.println("using lambda expresion");
 	
 	
-	
-	
-	
+	map.forEach((key,value)->{
+		
+		System.out.println(key);
+		System.out.println(value);
+		
+		
+	});	
 	
 	
 	
