@@ -1,6 +1,8 @@
 package com.simple_program;
 
 import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map.Entry;
 
 public class Increement {
 	
@@ -23,6 +25,15 @@ public class Increement {
 	
 	System.out.println(map);
 	
+	//iterate using keySet
+	
+Iterator <Entry<Integer,String>> iterator=map.entrySet().iterator();
+	
+ while(iterator.hasNext()) {
+	     Entry <Integer,String> entry= iterator.next();
+	     System.out.println(entry.getKey());
+	     System.out.println(entry.getValue());
+ }
 	
 
 	
