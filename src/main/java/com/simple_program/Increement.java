@@ -25,8 +25,8 @@ public class Increement {
 	
 	System.out.println(map);
 	
-	//iterate using keySet
-	
+	//iterate using entrySet
+	System.out.println();
 Iterator <Entry<Integer,String>> iterator=map.entrySet().iterator();
 	
  while(iterator.hasNext()) {
@@ -35,7 +35,17 @@ Iterator <Entry<Integer,String>> iterator=map.entrySet().iterator();
 	     System.out.println(entry.getValue());
  }
 	
+//iterate using keySet
+ System.out.println();
+ System.out.println("iterate Using keySet() ");
+Iterator <Integer> itr=map.keySet().iterator();
 
+while(itr.hasNext()) {
+	Integer key=itr.next();
+	
+	System.out.println(key);
+	System.out.println(map.get(key));
+}
 	
 	
 	
